@@ -1,0 +1,20 @@
+compiler: rillv1
+
+display_name: Untitled Rill Project
+
+# The project's default OLAP connector.
+# Learn more: https://docs.rilldata.com/reference/olap-engines
+olap_connector: duckdb
+
+mock_users:
+- email: test@rilldata.com
+- email: aditya.hegde@rilldata.com
+  groups:
+  - group-test
+- email: adityahegde@gmail.com
+- email: test@yahoo.com
+- email: adityahegde@yahoo.com
+
+features:
+  rillTime: '{{ eq (.user.domain) "rilldata.com" }}'
+  dashboardChat: '{{.user.embed}}'
