@@ -17,4 +17,4 @@ mock_users:
 
 features:
   rillTime: '{{ eq (.user.domain) "rilldata.com" }}'
-  dashboardChat: '{{.user.embed}}'
+  dashboardChat: '{{not (.user.embed)}}'
