@@ -16,5 +16,6 @@ mock_users:
 - email: adityahegde@yahoo.com
 
 features:
-  reports: '{{ eq (.user.domain) "rilldata.com" }}'
+  reports: |
+    '{{.user.domain}}' = 'rilldata.com'
   exports: '{{not (.user.embed)}}'
