@@ -16,5 +16,5 @@ mock_users:
 - email: adityahegde@yahoo.com
 
 features:
-  rillTime: '{{ eq (.user.domain) "rilldata.com" }}'
-  dashboardChat: '{{not (.user.embed)}}'
+  reports: '{{ eq (.user.domain) "rilldata.com" }}'
+  exports: '{{not (.user.embed)}}'
